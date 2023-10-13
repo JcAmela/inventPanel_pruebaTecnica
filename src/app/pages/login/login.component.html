@@ -1,0 +1,10 @@
+<form (ngSubmit)="onSubmit()">
+    <mat-form-field>
+      <input matInput placeholder="Username" [(ngModel)]="username" name="username">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Password" [(ngModel)]="password" type="password" name="password">
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Login</button>
+  </form>
+  
