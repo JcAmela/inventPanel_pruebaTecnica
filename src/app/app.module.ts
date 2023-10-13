@@ -11,7 +11,8 @@ import { EnviosComponent } from './pages/envios/envios.component';
 import { LoginComponent } from './pages/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
-
+import { MatToolbarModule } from '@angular/material/toolbar'; // Importa MatToolbarModule
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,13 +21,15 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     CodigosPostalesComponent,
     TrabajadoresComponent,
     EnviosComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatToolbarModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
